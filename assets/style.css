@@ -1,0 +1,48 @@
+body {
+  background-color: #f5edf0;
+}
+
+header {
+  position: sticky;
+  margin: 15px auto;
+  text-align: center;
+}
+
+main {
+  background-color: pink;
+}
+
+footer {
+}
+
+#container {
+  background-color: rgba(5, 5, 5, 0.1);
+  margin-left: 480px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sidebar {
+  position: fixed;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#sidebar img {
+ border-radius: 100%;
+}
+
+.card {
+  text-align: justify;
+}
+
+.card-title {
+  text-align: left;
+}
+
+.card-body {
+}
+
+.card-footer {
+}
