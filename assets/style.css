@@ -6,22 +6,26 @@
   --bgcontent: #fcb9b2;
   --section-head: "Satisfy", cursive;
   --basetxtclr: #8c2f39;
+  --bgmain: #f7e1d7;
 }
 
 body {
-  background-color: #f7e1d7;
+  background-color: var(--bgmain);
   font-family: "Solway", serif;
+  margin: 0 15%;
 }
 
 header {
-  position: sticky;
+  position: fixed; 
+  top: 0;
   margin: auto;
-  text-align: center;
+  text-align: left;
+  background-color: var(--bgmain);
 }
 
 main {
   /* background-color: pink; */
-  margin: 0 15%;
+  margin-top: 10%;
 }
 
 footer {
@@ -139,3 +143,18 @@ ul {
 #spotlight:hover .project-content {
   display: block;
 }
+
+
+
+/* .soon {
+  display: flex;
+  flex-wrap: wrap;
+  height: 45%;
+  width: 45%;
+  justify-content: 
+} */
+
+/* .sub-content {
+  position: absolute;
+  top: 15%;
+} */
