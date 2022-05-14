@@ -7,29 +7,32 @@
   --section-head: "Satisfy", cursive;
   --basetxtclr: #8c2f39;
   --bgmain: #f7e1d7;
+  --contenttxt: "Solway", serif;
 }
 
 body {
   background-color: var(--bgmain);
-  font-family: "Solway", serif;
-  margin: 0 15%;
+  font-family: var(--contenttxt);
+  margin: 0 10%;
 }
 
 header {
-  position: fixed; 
+  position: fixed;
   top: 0;
   margin: auto;
   text-align: left;
   background-color: var(--bgmain);
+  font-family: var(--section-head);
+  font-size: x-large;
 }
 
 main {
   /* background-color: pink; */
   margin-top: 10%;
 }
-
+/* 
 footer {
-}
+} */
 
 hr {
   margin: 0;
@@ -50,6 +53,16 @@ a {
 
 ul {
   list-style: none;
+}
+
+button {
+  background-color: rgba(204, 213, 174, 0.75);
+  border: none;
+  font-size: large;
+  font-family: var(--contenttxt);
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--basetxtclr);
 }
 
 #container {
@@ -108,20 +121,15 @@ ul {
   margin: 2%;
 }
 
-/* #spotlight {
-  background-image: url(./imgs/runbuddy-screenshot.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height: 500px;
-}
+/* approved content */
 
-#spotlight:hover {
-  opacity: 50%;
-} */
+#projects {
+  margin-bottom: 5%;
+}
 
 #spotlight {
   position: relative;
+  margin: 1% 0.5%;
 }
 
 .project-content {
@@ -130,31 +138,34 @@ ul {
   width: auto;
   text-align: center;
   display: none;
+  margin: 5%;
 }
 
-#spotlight > img {
+.project-effect {
+  background-color: black;
+  border-radius: 5px;
+}
+
+.project-effect > img {
   width: 100%;
-}
-
-#spotlight:hover img {
-  opacity: 0.5;
-}
-
-#spotlight:hover .project-content {
+  border-radius: 5px;
   display: block;
 }
 
+.project-effect:hover img {
+  opacity: 0.25;
+}
 
+.project-effect:hover .project-content {
+  display: block;
+}
 
-/* .soon {
-  display: flex;
-  flex-wrap: wrap;
-  height: 45%;
-  width: 45%;
-  justify-content: 
-} */
+.soon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
-/* .sub-content {
-  position: absolute;
-  top: 15%;
-} */
+.sub-project {
+  position: relative;
+  margin: 1%;
+}
