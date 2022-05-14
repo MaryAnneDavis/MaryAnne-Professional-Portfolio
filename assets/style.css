@@ -97,3 +97,45 @@ ul {
   font-size: larger;
   margin: 3% 2% 2% 0;
 }
+
+.sub-title {
+  font-family: var(--section-head);
+  font-size: xx-large;
+  margin: 2%;
+}
+
+/* #spotlight {
+  background-image: url(./imgs/runbuddy-screenshot.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+}
+
+#spotlight:hover {
+  opacity: 50%;
+} */
+
+#spotlight {
+  position: relative;
+}
+
+.project-content {
+  position: absolute;
+  top: 15%;
+  width: auto;
+  text-align: center;
+  display: none;
+}
+
+#spotlight > img {
+  width: 100%;
+}
+
+#spotlight:hover img {
+  opacity: 0.5;
+}
+
+#spotlight:hover .project-content {
+  display: block;
+}
