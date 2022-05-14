@@ -121,7 +121,7 @@ button {
   margin: 2%;
 }
 
-/* approved content */
+/* css for project section */
 
 #projects {
   margin-bottom: 5%;
@@ -130,15 +130,6 @@ button {
 #spotlight {
   position: relative;
   margin: 1% 0.5%;
-}
-
-.project-content {
-  position: absolute;
-  top: 15%;
-  width: auto;
-  text-align: center;
-  display: none;
-  margin: 5%;
 }
 
 .project-effect {
@@ -152,14 +143,6 @@ button {
   display: block;
 }
 
-.project-effect:hover img {
-  opacity: 0.25;
-}
-
-.project-effect:hover .project-content {
-  display: block;
-}
-
 .soon {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -168,4 +151,23 @@ button {
 .sub-project {
   position: relative;
   margin: 1%;
+}
+
+/* hover effects */
+
+.project-effect:hover img {
+  opacity: 0.25;
+}
+
+.project-effect:hover .project-content {
+  display: block;
+}
+
+.project-content {
+  position: absolute;
+  top: 15%;
+  width: auto;
+  text-align: center;
+  display: none;
+  margin: 5%;
 }
