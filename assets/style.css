@@ -170,14 +170,58 @@ nav > ul {
 
 .project-effect:hover .project-content {
   display: block;
+  transition: all 200ms linear;
 }
 
 .project-content {
   position: absolute;
-  top: 15%;
+  top: 5%;
   width: auto;
   text-align: center;
   display: none;
   margin: 5%;
   color: var(--bgmain);
+  box-sizing: border-box;
 }
+
+
+
+/* Media Queries */
+
+
+@media screen and (max-width: 1200px) {
+  header {
+    position: relative;
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  #container {
+    margin-left: 0;
+  }
+
+  #sidebar {
+    position: relative;
+  }
+
+  .project-content > .sub-title {
+    font-size: 3vw;
+  }
+  
+  .project-content > .card-body {
+    font-size: 2vw;
+  }
+}
+
+
