@@ -58,7 +58,7 @@ ul {
 }
 
 button {
-  background-color: rgba(204, 213, 174, 0.75);
+  background-color: rgba(110, 126, 133, 0.50);
   border: none;
   font-size: large;
   font-family: var(--contenttxt);
@@ -154,7 +154,7 @@ nav > ul > li {
 }
 
 .project-effect {
-  background-color: var(--basetxtclr);
+  background-color: var(--bgcontent);
   border-radius: 5px;
 }
 
@@ -177,7 +177,7 @@ nav > ul > li {
 /* hover effects */
 
 .project-effect:hover img {
-  opacity: 0.25;
+  opacity: 0.20;
 }
 
 .project-effect:hover .project-content {
@@ -192,7 +192,8 @@ nav > ul > li {
   text-align: center;
   display: none;
   margin: 5%;
-  color: var(--bgmain);
+  color: var(--basetxtclr);
+  font-weight: 600;
   box-sizing: border-box;
 }
 
