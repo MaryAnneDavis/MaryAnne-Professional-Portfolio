@@ -3,7 +3,8 @@
 }
 
 :root {
-  --bgcontent: #b7cece;
+  --bgcontent: rgba(183, 206, 206, 0.5);
+  /* --bgcontent: #b7cece; */
   --section-head: "Satisfy", cursive;
   --basetxtclr: #1c0f13;
   --bgmain: #e2e2e2;
@@ -80,23 +81,29 @@ button {
 }
 
 #sidebar img {
-  border-radius: 100%;
-  border: 3px dotted var(--basetxtclr);
+  border-radius: 25%;
+  border: 5px solid #b7cece ;
+  filter: grayscale(25%);
 }
 
 nav > ul {
   font-family: var(--section-head);
   font-size: xx-large;
-  text-decoration-line: underline;
-  text-decoration-style: dashed;
-  text-decoration-thickness: 2%;
+  font-weight: 800;
+}
+
+nav > ul > li {
+  background-color: var(--bgcontent);
+  margin-bottom: 1%;
+  border-radius: 50px;
+  border: #b7cece solid;
 }
 
 .card {
   text-align: justify;
   padding: 2% 3%;
   border: 3px solid var(--bgcontent);
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: var(--bgcontent);
   color: var(--basetxtclr);
   width: 100%;
