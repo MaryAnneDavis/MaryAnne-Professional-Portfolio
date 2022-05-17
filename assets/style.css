@@ -30,9 +30,10 @@ header {
 main {
   margin-top: 10%;
 }
-/* 
+
 footer {
-} */
+  margin: 5%;
+}
 
 hr {
   margin: 0;
