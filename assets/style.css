@@ -149,6 +149,10 @@ nav > ul > li {
   margin: 1% 0.5%;
 }
 
+#spotlight > .project-content {
+  margin-top: 0;
+}
+
 .project-effect {
   background-color: var(--basetxtclr);
   border-radius: 5px;
