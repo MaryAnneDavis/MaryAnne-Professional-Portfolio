@@ -184,11 +184,8 @@ nav > ul {
   box-sizing: border-box;
 }
 
-
-
 /* Media Queries */
-
-
+/* screen size 1200px */
 @media screen and (max-width: 1200px) {
   header {
     position: relative;
@@ -197,10 +194,6 @@ nav > ul {
 
   h1 {
     margin-bottom: 0;
-  }
-
-  body {
-    margin: 0;
   }
 
   main {
@@ -214,14 +207,64 @@ nav > ul {
   #sidebar {
     position: relative;
   }
-
+  /* made it so text will be more responsive/dynamic to fit container. */
   .project-content > .sub-title {
     font-size: 3vw;
   }
-  
-  .project-content > .card-body {
+
+  .project-content > .card-body,
+  button {
     font-size: 2vw;
   }
 }
+/* another media query for even smaller screen :) I have got this */
+@media screen and (max-width: 575px) {
+  .card-title {
+    font-size: 7vw;
+  }
 
+  .soon {
+    grid-template-columns: 1fr;
+  }
+  .project-content {
+    display: block;
+    color: var(--basetxtclr);
+  }
 
+  .project-effect {
+    background-color: var(--bgcontent);
+    display: flex;
+  }
+
+  .project-effect:hover img {
+    opacity: 1;
+  }
+
+  #spotlight > img {
+    height: 50%;
+  }
+  
+  #spotlight {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #spotlight > .project-content {
+    position: relative;
+    float: left;
+  }
+
+  .sub-project > img{
+    width: 50%;
+    height: auto;
+  }
+
+  .sub-project > .project-content {
+    position: relative;
+  }
+
+  #contact > ul {
+    font-size: 3vw;
+    text-align: center;
+  }
+}
