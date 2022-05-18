@@ -11,6 +11,7 @@
   --basetxtclr: #1c0f13;
   --bgmain: #e2e2e2;
   --contenttxt: "Solway", serif;
+  --majorityfont: 600;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
   font-family: var(--contenttxt);
   margin: 0 10%;
   color: var(--basetxtclr);
+  font-weight: 600;
 }
 
 header {
@@ -156,7 +158,6 @@ nav > ul > li {
 }
 
 .project-effect {
-  background-color: var(--bgcontent);
   border-radius: 5px;
 }
 
@@ -195,7 +196,6 @@ nav > ul > li {
   display: none;
   margin: 5%;
   color: var(--basetxtclr);
-  font-weight: 600;
   box-sizing: border-box;
 }
 
@@ -235,11 +235,16 @@ nav > ul > li {
 /* another media query for even smaller screen :) I have got this */
 @media screen and (max-width: 575px) {
   .card-title {
-    font-size: 7vw;
+    font-size: 10vw;
   }
 
+  .card-body {
+    font-size: 5vw;
+  }
+
+  /* project section */
+  /* spotlight */
   #spotlight > img {
-    height: 50%;
   }
   
   #spotlight {
@@ -258,25 +263,37 @@ nav > ul > li {
   }
 
   .project-effect {
-    background-color: var(--bgcontent);
-    display: flex;
+    text-align: center;
   }
+
+  /* attempt to remove hover effect */
 
   .project-effect:hover img {
     opacity: 1;
   }
+
+  /* placeholder project section */
+
   .soon {
     grid-template-columns: 1fr;
   }
 
   .sub-project > img{
-    width: 50%;
-    height: auto;
+    text-align: center;
+    height: 50%;
+  }
+  .project-content > .sub-title {
+    font-size: 8vw;
+  }
+
+  .project-content > .card-body,
+    button {
+    font-size: 4vw;
   }
 
 
   #contact > ul {
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
   }
 }
